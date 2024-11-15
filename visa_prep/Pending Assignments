@@ -1,0 +1,14 @@
+# Read input values for the number of assignments, time per assignment, and days available
+D, F, G = map(int, input().split())
+
+# Calculate total time needed to complete all assignments
+total_time_needed = D * F
+
+# Calculate total available time in minutes
+available_time = G * 24 * 60
+
+# Check if Vignesh can complete all assignments within the available time
+if total_time_needed <= available_time:
+    print("YES")
+else:
+    print("NO")
