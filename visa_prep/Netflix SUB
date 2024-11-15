@@ -1,0 +1,8 @@
+# Read input values 
+T, Y, U, X = map(int, input().split())
+
+# Check if any pair can afford the subscription
+if (T + Y >= X) or (T + U >= X) or (Y + U >= X):
+    print("YES")
+else:
+    print("NO")
