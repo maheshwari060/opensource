@@ -1,0 +1,10 @@
+# Read input values
+M, N, O = map(int, input().split())
+
+# Determine what Vignesh can afford
+if M + N <= O:
+    print(2)  # Can afford both gym and trainer
+elif M <= O:
+    print(1)  # Can only afford the gym
+else:
+    print(0)  # Can't afford even the gym
