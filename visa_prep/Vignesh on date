@@ -1,0 +1,9 @@
+# Input: two space-separated integers x and y
+a, b = map(int, input().split())
+
+# Check if Chef has enough money
+if a >= b:
+    print("YES")
+else:
+    print("NO")
+  
