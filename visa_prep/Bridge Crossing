@@ -1,0 +1,16 @@
+
+X, Y, Z = map(int, input().split())
+
+# Calculate the remaining capacity after accounting for the truck weight
+remaining_capacity = Z - Y
+
+# Ensure the truck weight doesn't exceed the bridge capacity
+if remaining_capacity >= 0:
+    # Calculate the maximum number of mangoes that can be loaded
+    max_mangoes = remaining_capacity // X
+else:
+    # No mangoes can be loaded if the truck alone exceeds the capacity
+    max_mangoes = 0
+
+# Print the result
+print(max_mangoes)
