@@ -1,0 +1,8 @@
+# Read input value for Charan's age 
+Q = int(input())
+
+# Calculate Vignesh's age when Charan was X years old
+vignesh_age_then = Q - 15
+
+# Print the result
+print(vignesh_age_then)
