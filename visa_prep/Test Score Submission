@@ -1,0 +1,11 @@
+# Read input values
+N, D, Y = map(int, input().split())
+
+# Calculate the maximum possible score
+max_score = N * D
+
+# Check if Vignesh can achieve exactly Y marks
+if Y <= max_score and Y % D == 0:
+    print("YES")
+else:
+    print("NO")
