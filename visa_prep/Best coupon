@@ -1,0 +1,14 @@
+# Read the bill amount
+A = int(input())
+
+# Calculate the amount after 10% discount
+discounted_price_10 = A - (A * 0.10)
+
+
+discounted_price_100 = A - 100
+
+# Find the minimum amount Vignesh has to pay
+final_amount = min(discounted_price_10, discounted_price_100)
+
+# Print the final amount Vignesh has to pay
+print(int(final_amount))
