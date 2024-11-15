@@ -1,0 +1,10 @@
+# Read input values for Vignesh and Charan's choices
+vignesh, charan = input().split()
+
+# Determine the winner based on the game rules
+if vignesh == charan:
+    print("NULL")
+elif (vignesh == 'R' and charan == 'S') or (vignesh == 'S' and charan == 'P') or (vignesh == 'P' and charan == 'R'):
+    print("Vignesh")
+else:
+    print("Charan")
